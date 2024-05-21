@@ -33,7 +33,7 @@ body{
 /* Header - navigationsmenu og logo */  
 .bg-body-tertiary{
     background-color: #EBE5DA !important;
-    height: 100px;
+    height: 120px;
     font-weight: bold;
     color: #6B5E55 !important;
 }
@@ -118,7 +118,7 @@ h1, h2{
 input[type=text], input[type=submit] {
     padding: 12px;
     margin: 8px 0;
-    width: 80%;
+    width: 100%;
     display: inline-block;
     border: 1px solid #6B5E55;;
     box-sizing: border-box;
@@ -136,6 +136,10 @@ input[type=submit] {
 input[type=submit]:hover {
     opacity: 0.8;
     background-color: #FFFEFB;
+}
+
+#nyhedsbrev-navn, #nyhedsbrev-email, #nyhedsbrev-knap{
+    width: 60%;
 }
 
 /* SEO tekst */ 
@@ -366,6 +370,27 @@ img.hover-shadow {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.lukket, .open{
+    width: 100%;
+}
+
+/* inforgrafik placering */ 
+.infografik-placering{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infografik-billede{
+    width: 80%;
+    height: auto;
+}
+
+.infografik{
+    margin-top: 100px;
+}
+  
+
 /* tekst omkring materialevalg, som henviser til forsiden */ 
 .materiale-link{
     text-align: center;
@@ -384,7 +409,7 @@ img.hover-shadow {
 
 /* billederne på undersiderne samt andre steder */ 
 .avis, .hjerter, .tegn{
-    width: 80%;
+    width: 100%;
     height: auto;
 }
 
@@ -397,6 +422,8 @@ img.hover-shadow {
 .rund img{
     width: 50px;
 }
+
+
 
 
                     /* STYLING AF OM OS SIDEN */ 
@@ -437,6 +464,10 @@ input[type=text], select, textarea {
     resize: vertical;
     background-color: #F8F7F1;
     color: #6B5E55;
+}
+
+#besked{
+    height: 200px;
 }
   
 input[type=submit] {
@@ -602,6 +633,11 @@ input[type=submit]:hover {
     }
 }
 
+
+
+
+
+
                     /* MEDIA QUERRY FOR DESKTOP VERSIONEN */ 
 @media screen and (min-width: 992px) {
     body{
@@ -641,30 +677,38 @@ input[type=submit]:hover {
         margin-top: 50px;
     }
 
-    /* Kontaktformular */ 
-    .kontaktformular{
-        width: 50%;
-    }
-
+    /* runder billeder på begivenhedsundersiderne */ 
     .rund{
         width: 300px;
         height: auto;
         margin-left: 25px;
     }
 
+    /* forside video */ 
     .intro-video{
         position: absolute; 
         z-index: -1;
     }
+
+    .infografik{
+        margin-top: 10px;
+    }
+   
+    .infografik-billede{
+        width: 100%;
+        height: auto;
+    }
 }
 
 @media screen and (min-width: 1200px) {
+    /* runder billeder på begivenhedsundersiderne */ 
     .rund{
         width: 300px;
         height: auto;
         margin-left: 90px;
     }
 
+    /* placering af indhold på forsiden */ 
     .forside{
         margin-top: 450px;
     }
