@@ -20,16 +20,19 @@
 <body>
     <!-- Header med navigationsmenu og virksomhedslogo -->
     <header>
-        <nav class="navbar navbar-expand-md bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html"><img src="#" alt=""></a>
+        <nav class="navbar navbar-expand-md bg-body-tertiary spacing">
+            <div class="container-fluid spacing">
+              <div>
+              <a class="navbar-brand" href="index.html"><img class="logo" src="img/logo.png" alt="Virksomheden Kære Louises logo"></a>
+              </div>
+              <div>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item dropdown">
-                        <a class="nav-link besøg dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link besog dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Begivenheder
                         </a>
                         <ul class="dropdown-menu">
@@ -42,13 +45,14 @@
                     <a class="nav-link" href="om_os.html">Om os</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="kontakt.html">Kontakt</a>
+                    <a class="nav-link disabled" href="#">Webshop</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Webshop</a>
+                    <a class="nav-link" href="kontakt.html">Kontakt</a>
                   </li>
                 </ul>
               </div>
+            </div>
             </div>
           </nav>
     </header>
@@ -57,16 +61,19 @@
     <!-- Samlet kasse med alt sidens indhold -->
     <section class="indholdskasse-fader">
     <section class="indholdskasse">
+    <section class="indhold">
     <!-- inledningstekst omkring jul -->
     <div class="container">
-        <h1>Din gave guide</h1>
+        <div class="title">
+        <h1 class="special-tekst">Din gave guide</h1>
         <h1>JUL</h1>
+        </div>
         <div class="row align-items-start">
           <div class="col-sm-12 col-md-6 col-lg-6">
-           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam veritatis accusantium deleniti voluptate ipsum soluta doloremque necessitatibus fugiat officiis corrupti?</p>
+           <p>Julen er gavernes fest, og det er også i denne tid, at danskerne bruger allermest gavepapir. Derfor har vi samlet en masse inspiration til hvordan du kan skåne miljøet i denne skønne tid. </p>
           </div>
-          <div class="col">
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla necessitatibus alias doloribus commodi quasi voluptatum quia earum exercitationem aspernatur esse?</p>
+          <div class="col-sm-12 col-md-6 col-lg-6">
+           <p>Du kan nedenfor i videoen og via billeder se en step-for-step guide til hvordan du kan pakke en gave ind ved at bruge et juleviskestykke, og ved at pynte gaven med gran og julepynt som kan bruges igen. Derudover kommer vi med nogle forskellige forslag til hvilke genanvendelig og miljøvenlige ting, som du kan bruge til at pynte dine julegaver. </p>
           </div>
         </div>
       </div>
@@ -75,16 +82,16 @@
       <!-- Video af en indpakningsmåde -->
       <div class="container">
         <div class="row align-items-start">
-          <div class="col-12">
-            <video src="#"></video>
-          </div>
+            <div class=" col-12 iframe-container">
+                <iframe src="https://www.youtube.com/embed/aBGGjCghEJU?si=0q2UJN-_nht0mZVU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
         </div>
       </div>
 
 
       <!-- Step by step guide via infografik -->
       <div class="container">
-        <h2>Step by step guide</h2>
+        <h2 class="special-tekst">Step by step guide</h2>
         <div class="row align-items-start">
           <div class="col-12">
             <img src="#" alt="">
@@ -94,88 +101,106 @@
 
 
       <!-- Forslag til gavepynt og personliggørelse -->
-      <div class="container">
+      <div class="container pynt">
         <h2>FORSLAG TIL GAVEPYNT</h2>
-
+        <br>
+        <br>
         <!-- Forslag 1 -->
         <div class="row align-items-start">
-          <div class="col-sm-12 col-md-6 col-lg-6">
-            <img src="#" alt="">
+          <div class="col-sm-12 col-md-6 col-lg-6 rund-centering">
+            <img class="rund" src="img/appelsinskiver.webp" alt="">
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="col-sm-12 col-md-6 col-lg-6 pynt-tekst">
+            <div class="underside-overskrift-centering">
             <h3 class="underside-overskrift">Appelsin skiver</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit pariatur quisquam adipisci eos eaque quis minus? Vel, ipsam, magnam eum ipsum maiores perferendis veritatis sed nisi laboriosam modi dolorum aut.</p>
+            </div>
+            <p>Du kan med fordel skære nogle tynde skiver appelsin, som du kan komme i ovnen. Ovnen skal stå på 100 grader varmluft, hvorefter appelsinskiverne skal have en time på hver side. Når de er telt tørre tager du dem ud og lader dem køle af. Når du skal have dem på gaven, kan du føre en snor igennem dem, og binde det på gaven. <a class="eksterne-links" src="https://mummum.dk/toerret-appelsin/" target="_blank">Læs mere her</a></p>
           </div>
         </div>
       </div>
 
       <!-- Forslag 2 -->
-      <div class="container">
+      <div class="container pynt">
         <div class="row align-items-start">
-          <div class="col-sm-12 col-md-6 col-lg-6">
-            <img src="#" alt="">
+          <div class="col-sm-12 col-md-6 col-lg-6 rund-centering">
+            <img class="rund" src="img/grankogle.webp" alt="">
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="col-sm-12 col-md-6 col-lg-6 pynt-tekst">
+            <div class="underside-overskrift-centering">
             <h3 class="underside-overskrift">Grankogler</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit pariatur quisquam adipisci eos eaque quis minus? Vel, ipsam, magnam eum ipsum maiores perferendis veritatis sed nisi laboriosam modi dolorum aut.</p>
+            </div>
+            <p>Grankogler kan findes i de fleste skove, og er en sød detalje på en gave. Grankoglen giver et hyggeligt og naturligt look, og så kan den genbruges efterfølgende til dekorationer.</p>
           </div>
         </div>
       </div>
 
       <!-- Forslag 3 -->
-      <div class="container">
+      <div class="container pynt">
         <div class="row align-items-start">
-          <div class="col-sm-12 col-md-6 col-lg-6">
-            <img src="#" alt="">
+          <div class="col-sm-12 col-md-6 col-lg-6 rund-centering">
+            <img class="rund" src="img/jul4.webp" alt="">
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-6">
+          <div class="col-sm-12 col-md-6 col-lg-6 pynt-tekst">
+            <div class="underside-overskrift-centering">
             <h3 class="underside-overskrift">Gran</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit pariatur quisquam adipisci eos eaque quis minus? Vel, ipsam, magnam eum ipsum maiores perferendis veritatis sed nisi laboriosam modi dolorum aut.</p>
+            </div>
+            <p>Gran er endnu en ting som man nemt kan finde ved juletid. Du kan f.eks. bruge gran fra dit juletræ, eller du kan finde grantræer i naturen, hvor du kan klippe små kviste af. Disse små grankviste på en gave, omfavner julestemningen og giver et rigtig fint resultat.</p>
           </div>
         </div>
       </div>
 
+
+      <div class="container text-center">
+        <div class="row align-items-start">
+          <div class="col-12">
+            <p class="materiale-link">Ønsker du at læse mere om hvilke materialer, som du kunne anvende til dine gaveindpakninger, så følg linket og <a class="eksterne-links" href="index.html">læs mere her.</a></p>
+          </div>
+        </div>
+      </div>
+      </section>
 
       <!-- Tips/ børneinvoldvering -->
-      <div class="container børnehacks">
+      <div class="container bornehacks">
         <div class="row align-items-start">
           <div class="col-sm-12 col-md-6 col-lg-6">
-            <h2>Tips</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, aperiam sit, neque est maiores incidunt dolore veniam sequi reiciendis, voluptatem placeat nostrum officia. Fugit, tenetur repudiandae. Quia, nemo molestiae, inventore incidunt eos quam praesentium reprehenderit debitis obcaecati eum perspiciatis dolor nesciunt consequatur? Quo odio quibusdam, laborum tenetur obcaecati dignissimos similique!</p>
+            <h2 class="special-tekst">Tip!</h2>
+            <p class="bornehacks-tekst">Hvis du vil pynte lidt på gammelt gemt gavepapir, kan dette gøres meget simpelt. Tag f.eks. en toiletrulle og mas den plads. Åben den så op igen og form en bund og top af et hjerte i hver af de sammenpressede ender. Dyp herefter den ene ende af toiletrullen i den farve maling som du kan lide og brug nu rullen som stempel. Du kan dekorere lige som du har lyst og du kan endda forme små fine sommerfugle med denne hjerteform ved at lade bunden af hjerterne ramme hinanden og vupti har du to sommerfugle-vinger!</p>
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-6">
-            <img src="#" alt="">
+          <div class="col-sm-12 col-md-6 col-lg-6 hjerte-centering">
+            <img class="hjerter" src="img/hjerter.webp" alt="">
           </div>
         </div>
       </div>
 
-
+      <section class="indhold">
       <!-- Inspirationsbilleder med lightbox -->
-      <div class="container">
+      <div class="container inspiration">
+        <h2 class="special-tekst">Inspiration</h2>
+        <p class="inspiration-link">Ønsker du mere inspiration til hvordan du kan indpakke dine gaver, så tjek endelig vores <a class="eksterne-links" href="#" target="_blank">instagram</a> ud.</p>
         <div class="row align-items-start row">
           <div class="col-sm-6 col-md-3 col-lg-3 column">
-            <img src="#" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            <img src="img/jul1.webp" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
           </div>
           <div class="col-sm-6 col-md-3 col-lg-3 column">
-            <img src="#" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            <img src="img/jul2.webp" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
           </div>
           <div class="col-sm-6 col-md-3 col-lg-3 column">
-            <img src="#" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            <img src="img/jul3.webp" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
           </div>
           <div class="col-sm-6 col-md-3 col-lg-3 column">
-            <img src="#" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+            <img src="img/jul4.webp" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
           </div>
           <div class="col-sm-6 col-md-3 col-lg-3 column">
-            <img src="#" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+            <img src="img/pose_jul.webp" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
           </div>
           <div class="col-sm-6 col-md-3 col-lg-3 column">
-            <img src="#" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+            <img src="img/smykker_gaver.webp" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
           </div>
           <div class="col-sm-6 col-md-3 col-lg-3 column">
-            <img src="#" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+            <img src="img/nytaar.webp" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
           </div>
           <div class="col-sm-6 col-md-3 col-lg-3 column">
-            <img src="#" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+            <img src="img/rens_buket.webp" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
           </div>
         </div>
       </div>
@@ -186,41 +211,42 @@
         <div class="modal-content">
           <div class="mySlides">
             <div class="numbertext">1 / 8</div>
-            <img src="#" style="width:100%">
+            <img src="img/jul1.webp" style="width:100%">
           </div>
           <div class="mySlides">
             <div class="numbertext">2 / 8</div>
-            <img src="#" style="width:100%">
+            <img src="img/jul2.webp" style="width:100%">
           </div>
           <div class="mySlides">
             <div class="numbertext">3 / 8</div>
-            <img src="#" style="width:100%">
+            <img src="img/jul3.webp" style="width:100%">
           </div>
           <div class="mySlides">
             <div class="numbertext">4 / 8</div>
-            <img src="#" style="width:100%">
+            <img src="img/jul4.webp" style="width:100%">
           </div>
           <div class="mySlides">
             <div class="numbertext">5 / 8</div>
-            <img src="#" style="width:100%">
+            <img src="img/pose_jul.webp" style="width:100%">
           </div>
           <div class="mySlides">
             <div class="numbertext">6 / 8</div>
-            <img src="#" style="width:100%">
+            <img src="img/smykker_gaver.webp" style="width:100%">
           </div>
           <div class="mySlides">
             <div class="numbertext">7 / 8</div>
-            <img src="#" style="width:100%">
+            <img src="img/nytaar.webp" style="width:100%">
           </div>
           <div class="mySlides">
             <div class="numbertext">8 / 8</div>
-            <img src="#" style="width:100%">
+            <img src="img/rens_buket.webp" style="width:100%">
           </div>
           
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
           <a class="next" onclick="plusSlides(1)">&#10095;</a>
           </div> 
         </div>     
+    </section>
     </section>
     </section>
 
@@ -230,8 +256,8 @@
     <div class="footer-brede">
         <div class="footer-vertikal">
         <div class="footer-et">
-                <h4 class="footer-overskrift">Inspiration</h4>
-                <div class="inspiration">
+                <h4 class="footer-overskrift">INSPIRATION</h4>
+                <div class="inspiration-footer">
                 <a class="links" href="index.html">FORSIDE</a>
                 <a class="links" href="jul.html">JUL</a>
                 <a class="links" href="fødselsdag.html">FØDSELSDAG</a>

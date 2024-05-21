@@ -18,9 +18,12 @@
 <body>
  <!-- Header med navigationsmenu og virksomhedslogo -->
  <header>
-    <nav class="navbar navbar-expand-md bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="#" alt=""></a>
+    <nav class="navbar navbar-expand-md bg-body-tertiary spacing">
+        <div class="container-fluid spacing">
+          <div>
+          <a class="navbar-brand" href="index.html"><img class="logo" src="img/logo.png" alt="Virksomheden Kære Louises logo"></a>
+          </div>
+          <div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -37,16 +40,17 @@
                     </ul>
                   </li>
               <li class="nav-item">
-                <a class="nav-link besøg" href="om_os.html">Om os</a>
+                <a class="nav-link besog" href="om_os.html">Om os</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Webshop</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="kontakt.html">Kontakt</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Webshop</a>
-              </li>
             </ul>
           </div>
+        </div>
         </div>
       </nav>
 </header>
@@ -55,13 +59,16 @@
 <!-- Samlet kasse med alt sidens indhold -->
 <section class="indholdskasse-fader">
 <section class="indholdskasse">
+<section class="indhold">
     <!-- inledningsbillede af virksomhedens ansigter -->
     <div class="container">
-        <h1>Hvem er vi?</h1>
+        <div class="title">
+        <h1 class="special-tekst">Hvem er vi?</h1>
         <h1>KÆRE LOUISE</h1>
+        </div>
         <div class="row align-items-start">
-          <div class="col-12">
-           <img src="#" alt="">
+          <div class="col-12 om-os-billede-placering">
+            <img class="om-os-billede" src="img/om_os.webp" alt="Skaberne af Kære Louise">
           </div>
         </div>
       </div>
@@ -69,14 +76,21 @@
       <!-- inledningstekst omkring hvem virksomheden er -->
       <div class="container">
         <div class="row align-items-start">
-          <div class="col-sm-12 col-md-6 col-lg-6">
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, laborum vitae, dolorem officia architecto eligendi aut obcaecati, iure iusto unde quasi incidunt mollitia? Ad dicta soluta voluptatibus esse id, qui cum aperiam! Asperiores, soluta debitis libero necessitatibus quod tempora dolore ex culpa temporibus accusamus ipsum, eius delectus aut nobis explicabo!</p>
+          <div class="col-sm-12 col-md-6 col-lg-6 om-os-tekst">
+           <p>Hej! Hvor er vi glade for at du har fundet vej til vores hjemmeside. Vi er 3 piger som sammen har skabt denne side til inspiration af genanvendelig gaveindpakning. Bæredygtighed er en meget vigtig værdi for os alle og her på siden vil vi gerne dele vores passion for netop dette. 
+            <br>
+            <br>
+            Amalie (i midten) er 25 år og har arbejdet som butiksmedarbejder i Søstrene Grene. Herigennem er hun blevet meget opmærksom på hvor meget gavepapir, vi bruger og derved spilder hvert år i Danmark og har fået blod på tanden for at ændre på dette. Amalie er vores ansigt udadtil og hende du vil møde på vores live-sendinger på sociale medier.</p>
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-6">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolores eius iure tempore saepe, laboriosam neque beatae totam quidem in, dolorum numquam, ducimus hic recusandae error! Tempore in fugit dolorem fugiat sapiente corporis, ratione ut debitis. Culpa repudiandae, magni beatae, placeat at quisquam numquam voluptatem asperiores fugit repellendus aut molestias?</p>
+          <div class="col-sm-12 col-md-6 col-lg-6 om-os-tekst">
+            <p>Louise er 23 år og er vores mastermind ift. baggrundsinformation og at skabe vores online tilstedeværelse. Louise er vokset op i kollektiv og i en familie som lægger stor vægt på genbrug og økologi. Hun har derfor fået sine bæredygtige værdier med fra barnsben af. Louise er har en stor viden indenfor bæredygtighed og genbrugsmaterialer og hun er derfor altid up-to-date med alt det nye info på området. 
+            <br>
+            <br>
+            Bianca er 27 år og er vores æstetiske ekspert. Bianca fik sin søn i 2022 og blev derfor ekstra opmærksom på, hvad hun selv kunne gøre for de fremtidige generationer. Bianca har derfor delt sine mange idéer til genbrug indenfor f.eks. gaveindpakning, leg, tøj osv. på sociale medier siden og brænder meget for at skabe smukke indpakninger med genbrugsmaterialer.</p>
           </div>
         </div>
       </div>     
+</section>
 </section>
 </section>
 
@@ -86,8 +100,8 @@
     <div class="footer-brede">
         <div class="footer-vertikal">
         <div class="footer-et">
-                <h4 class="footer-overskrift">Inspiration</h4>
-                <div class="inspiration">
+                <h4 class="footer-overskrift">INSPIRATION</h4>
+                <div class="inspiration-footer">
                 <a class="links" href="index.html">FORSIDE</a>
                 <a class="links" href="jul.html">JUL</a>
                 <a class="links" href="fødselsdag.html">FØDSELSDAG</a>

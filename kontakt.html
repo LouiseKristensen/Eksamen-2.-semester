@@ -14,13 +14,41 @@
  <link rel="stylesheet" href="https://use.typekit.net/jnl1bzm.css">
  <link rel="stylesheet" href="stylesheet.css">
  <link rel="stylesheet" href="javascript.js">
+
+ <!-- script for Emailjs til kontaktformular -->
+ <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+ <script type="text/javascript">
+     (function() {
+         // https://dashboard.emailjs.com/admin/account
+         emailjs.init({
+           publicKey: "YlLt2A1NiFlVThtXs",
+         });
+     })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm('service_smxs8vw', 'template_wcj8p4u', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 </head>
 <body>
  <!-- Header med navigationsmenu og virksomhedslogo -->
  <header>
-    <nav class="navbar navbar-expand-md bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="#" alt=""></a>
+    <nav class="navbar navbar-expand-md bg-body-tertiary spacing">
+        <div class="container-fluid spacing">
+          <div>
+          <a class="navbar-brand" href="index.html"><img class="logo" src="img/logo.png" alt="Virksomheden Kære Louises logo"></a>
+          </div>
+          <div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -40,13 +68,14 @@
                 <a class="nav-link" href="om_os.html">Om os</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link besøg" href="kontakt.html">Kontakt</a>
+                <a class="nav-link disabled" href="#">Webshop</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Webshop</a>
+                <a class="nav-link" href="kontakt.html">Kontakt</a>
               </li>
             </ul>
           </div>
+        </div>
         </div>
       </nav>
 </header>
@@ -55,26 +84,29 @@
 <!-- Samlet kasse med alt sidens indhold -->
 <section class="indholdskasse-fader">
 <section class="indholdskasse">
+<section class="indhold">
     <!-- inledningstekst omkring hvad man kan kontakte virskomheden omkring -->
     <div class="container">
-        <h1>Spørgsmål?</h1>
+        <div class="title">
+        <h1 class="special-tekst">Spørgsmål?</h1>
         <h1>KONTAKT OS ENDELIG HER</h1>
+        </div>
         <div class="row align-items-start">
           <div class="col-sm-12 col-md-6 col-lg-6">
-           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam veritatis accusantium deleniti voluptate ipsum soluta doloremque necessitatibus fugiat officiis corrupti?</p>
+           <p>Skulle du sidde inde med nogle spørgsmål omkring gaveindpakning, genanvendelig materialer, vores videoer og guide eller noget helt andet.</p>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-6">
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla necessitatibus alias doloribus commodi quasi voluptatum quia earum exercitationem aspernatur esse?</p>
+           <p>Så er du mere end velkommen til at udfylde vores kontaktformular nedenfor, hvor du kan stille os alle de spørgsmål du skulle have. Vi vil vende tilbage så hurtigt vi kan!</p>
           </div>
         </div>
       </div>
 
     <!-- Kontaktformular -->
-    <div class="container">
+    <div class="container luft">
         <h2>KONTAKFORMULAR</h2>
         <div class="row align-items-start kontaktformular-placering">
           <div class="col-6 kontaktformular">
-                <form action="/action_page.php">
+                <form action="/action_page.php" id="contact-form">
                   <label for="name">Navn</label>
                   <input type="text" id="name" name="name" placeholder="Navn" required>
               
@@ -94,13 +126,14 @@
     </div>
 
     <!-- virksomhedens logo -->
-    <div class="container">
+    <div class="container kontakt-logo-placering">
         <div class="row align-items-start">
-            <div class="col-6">
-            <img src="#" alt="">
+            <div class="col-12">
+            <img class="kontakt-logo" src="img/logo.png" alt="">
             </div>
         </div>
     </div>
+</section>
 </section>
 </section>
     
@@ -110,8 +143,8 @@
     <div class="footer-brede">
         <div class="footer-vertikal">
         <div class="footer-et">
-                <h4 class="footer-overskrift">Inspiration</h4>
-                <div class="inspiration">
+                <h4 class="footer-overskrift">INSPIRATION</h4>
+                <div class="inspiration-footer">
                 <a class="links" href="index.html">FORSIDE</a>
                 <a class="links" href="jul.html">JUL</a>
                 <a class="links" href="fødselsdag.html">FØDSELSDAG</a>

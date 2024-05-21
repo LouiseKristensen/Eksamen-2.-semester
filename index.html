@@ -18,9 +18,12 @@
 <body>
     <!-- Header med navigationsmenu og virksomhedslogo -->
     <header>
-        <nav class="navbar navbar-expand-md bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="#" alt=""></a>
+        <nav class="navbar navbar-expand-md bg-body-tertiary spacing">
+            <div class="container-fluid spacing">
+              <div>
+              <a class="navbar-brand" href="index.html"><img class="logo" src="img/logo.png" alt="Virksomheden Kære Louises logo"></a>
+              </div>
+              <div>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -40,36 +43,43 @@
                     <a class="nav-link" href="om_os.html">Om os</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="kontakt.html">Kontakt</a>
+                    <a class="nav-link disabled" href="#">Webshop</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Webshop</a>
+                    <a class="nav-link" href="kontakt.html">Kontakt</a>
                   </li>
                 </ul>
               </div>
             </div>
+            </div>
           </nav>
     </header>
 
-
-    <!-- Introvideo/inspirationsvideo i toppen af siden -->
-    <div>
-        <video></video>
+       <!-- Introvideo/inspirationsvideo i toppen af siden  -->
+       <div class="col-12">
+        <video class="intro-video" autoplay muted loop>
+            <source src="video/forsidevideo_1.mp4" alt="introduktionsvideo for Kære Louise, hvor man bliver taget lidt med bag scenen" type="video/mp4">
+        </video>
     </div>
 
     <!-- Samlet kasse med alt sidens indhold -->
     <section class="indholdskasse-fader">
-    <section class="indholdskasse">
+    <section class="indholdskasse forside">
+    <section class="indhold">
      <!-- General information omkring danskernes gavepapirforbrug -->
-    <div class="container">
+    <div class="container ">
+        <div class="title">
         <h1 class="special-tekst">Vidste du at vi</h1>
-        <h1>SPILDER 800 TONS GAVEPAPIR UD OM ÅRET?</h1>
-        <div class="row align-items-start">
-          <div class="col-sm-12 col-md-6 col-lg-6">
-            <img src="..." class="img-fluid" alt="...">
+        <h2 class="index-overskrift">SPILDER 800 TONS GAVEPAPIR UD OM ÅRET?</h2>
+        </div>
+        <div class="row align-items-start omvendt afstand">
+          <div class="col-sm-12 col-md-6 col-lg-6 intro-billede-centering">
+            <img  class="img-fluid intro-billede" src="img/foeds_stack.webp" alt="...">
           </div>
           <div class="col-sm-12 col-md-6 col-lg-6">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A doloribus sit unde dolorem et maxime reprehenderit tempora, pariatur deleniti ipsum numquam quisquam dolore ratione ipsam facere eaque expedita perferendis est sed amet praesentium quia soluta. Explicabo tempore, sequi consectetur neque voluptas, facilis minima alias eos labore rerum numquam aspernatur maiores?</p>
+            <p>Danskerne bruger hvert år sammenlagt 825 ton gavepapir. Dette er et enormt tal at tage stilling til, og for at gøre det endnu værre, kan det meste af gavepapiret ikke genanvendes. Dette skyldes bl.a. at papiret er fyldt med glitter, belagt med plast eller metal, eller at papiret er produceret i så dårlig kvalitet, at fibrene ikke kan genanvendes. Hvis du derimod vælger at pakke gaver ind i genanvendelige materialer (såsom stof og aviser), vil det spare en del på ressourcetrækket. 
+            <br>
+            <a class="eksterne-links" href="https://affaldplus.dk/julens-indpakning" target="_blank">Læs mere her</a></p>
           </div>
         </div>
       </div>
@@ -81,74 +91,79 @@
 
         <!-- Anbefalning 1 -->
         <div class="row align-items-start forslag">
-          <div class="col-sm-12 col-md-6 col-lg-6">
-            <img src="..." class="img-fluid" alt="...">
+          <div class="col-sm-12 col-md-6 col-lg-6 materiale">
+            <img class="img-fluid indpaknings-billede et" src="..." alt="...">
           </div>
-            <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="col-sm-12 col-md-6 col-lg-6 forslag-tekst">
             <div class="overskrift-forslag">
-            <h3 class="overskrift">Tørklæde</h3>
+            <h3 class="overskrift">Gem hvad du modtager</h3>
             </div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A doloribus sit unde dolorem et maxime reprehenderit tempora, pariatur deleniti ipsum numquam quisquam dolore ratione ipsam facere eaque expedita perferendis est sed amet praesentium quia soluta. Explicabo tempore, sequi consectetur neque voluptas, facilis minima alias eos labore rerum numquam aspernatur maiores?</p>
-            <a href="#">Køb her</a>
+            <p>Den absolut bedste tendens indenfor genanvendelig gaveindpakning er at gemme bånd, pynt, papir osv. som du selv modtager fra andre. Stof-bånd kan gemmes i en æske og bruges igen. Gavepapir kan rettes ud og tape kan fjernes, så dette også kan pryde en ny gave og æsker fra f.eks. smykker, sko eller service kan pyntes og bruges igen.</p>
+            <a  class="eksterne-links" href="#" target="_blank">Køb her</a>
             </div>
           </div>
 
         <!-- Anbefaldning 2 -->
-          <div class="row align-items-start omvendt">
-            <div class="col-sm-12 col-md-6 col-lg-6">
-              <img src="..." class="img-fluid" alt="...">
+          <div class="row align-items-start forslag omvendt">
+            <div class="col-sm-12 col-md-6 col-lg-6 materiale">
+              <img class="img-fluid indpaknings-billede to" src="img/jul1.webp" alt="...">
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="col-sm-12 col-md-6 col-lg-6 forslag-tekst">
                 <div class="overskrift-forslag">
-                <h3 class="overskrift">genanvendelige gavepapir</h3>
+                <h3 class="overskrift">Genanvendelige gavepapir</h3>
                 </div>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A doloribus sit unde dolorem et maxime reprehenderit tempora, pariatur deleniti ipsum numquam quisquam dolore ratione ipsam facere eaque expedita perferendis est sed amet praesentium quia soluta. Explicabo tempore, sequi consectetur neque voluptas, facilis minima alias eos labore rerum numquam aspernatur maiores?</p>
-              <a href="#">Køb her</a>
+              <p>Når du bruger genanvendeligt gavepapir, hjælper du med at reducere mængden af gavepapir som går til spilde. Genanvendeligt gavepapir er lavet af plastik og er derfor meget slidstærkt. Det holder altså til at blive brugt mindst 10 gange og tape kan hives af uden at ødelægge papiret.</p>
+              <a class="eksterne-links" href="https://vissevasse.dk/collections/everwrap/products/everwrap-sheet-08" target="_blank">Køb her</a>
             </div>
           </div>
         
           <!-- Anbefaldning 3 -->
-          <div class="row align-items-start">
-            <div class="col-sm-12 col-md-6 col-lg-6">
-              <img src="..." class="img-fluid" alt="...">
+          <div class="row align-items-start forslag">
+            <div class="col-sm-12 col-md-6 col-lg-6 materiale">
+              <img class="img-fluid indpaknings-billede et" src="img/jul4.webp" alt="...">
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="col-sm-12 col-md-6 col-lg-6 forslag-tekst">
                 <div class="overskrift-forslag">
                 <h3 class="overskrift">Furoshiki - stof indpakning</h3>
                 </div>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A doloribus sit unde dolorem et maxime reprehenderit tempora, pariatur deleniti ipsum numquam quisquam dolore ratione ipsam facere eaque expedita perferendis est sed amet praesentium quia soluta. Explicabo tempore, sequi consectetur neque voluptas, facilis minima alias eos labore rerum numquam aspernatur maiores?</p>
-              <a href="#">Køb her</a>
+              <p>Furoshiki er den traditionelle japanske måde at pakke gaver ind, eller at transportere varer på, ved at bruge et stykke stof. Japanerne har i mere end 1300 år haft glæde af at pakke gaver ind i det firkantede stykke stof, som foldes og bindes sammen. Til dette vil du kunne bruge viskestykker, tørklæder, pudebetræk med mere.
+                <br>
+                <br>
+              Til en værtinde gave, kan man f.eks. også vikle et tørklæde rundt om en flaske vin. Der er flere fordele ved at bruge tørklæder; de giver et flot og unikt præg på gaven, og samtidig er det 2-i-1, da tørklædet bliver en del af gaven, som kan bruges igen og igen.
+              </p>
+              <a class="eksterne-links" href="https://denkinesiskebutik.dk/vare/furoshiki-gaveindpakning/" target="_blank">Køb her</a>
             </div>
           </div>
 
            <!-- Anbefaldning 4 -->
            <div class="row align-items-start omvendt">
-            <div class="col-sm-12 col-md-6 col-lg-6">
-              <img src="..." class="img-fluid" alt="...">
+            <div class="col-sm-12 col-md-6 col-lg-6 materiale">
+              <img class="img-fluid indpaknings-billede to" src="img/avis_buket.webp" alt="...">
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="col-sm-12 col-md-6 col-lg-6 forslag-tekst">
                 <div class="overskrift-forslag">
-                <h3 class="overskrift">Avis</h3>
+                <h3 class="overskrift">Naturens egen pynt</h3>
                 </div>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A doloribus sit unde dolorem et maxime reprehenderit tempora, pariatur deleniti ipsum numquam quisquam dolore ratione ipsam facere eaque expedita perferendis est sed amet praesentium quia soluta. Explicabo tempore, sequi consectetur neque voluptas, facilis minima alias eos labore rerum numquam aspernatur maiores?</p>
-              <a href="#">Køb her</a>
+              <p>Naturen byder hele året på smukke og meget forskellige grene, kviste og græne som kan pryde enhver gave til alle årets fejringer. Om sommeren kan blomster findes ved vejkanter eller i haven og om vinteren kan gran klippes af juletræet. Derudover kan appelsiner tørres og pynte på en julegave. Derudover kan du f.eks. finde eukalyptusgrene hos blomsterhandlere som kan tørres og holde som pynt til hele årets gaver.</p>
+              <a class="eksterne-links" href="https://www.kredslob.dk/sorteringsguiden/papir/papir/aviser" target="_blank">Køb her</a>
             </div>
           </div>
       </div>
+      </section>
 
 
     <!-- Nyhedsbrev (brugerinteraktion) -->
-    <div class="container nyhedsbrev">
+    <div class="nyhedsbrev">
         <div class="row align-items-start">
           <div class="col-12">
             <div>
-                <h2>Nyhedsbrev</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis dolores error impedit doloremque eius nam aliquam dicta tenetur inventore nihil!</p>
+                <h2 class="special-tekst">Nyhedsbrev</h2>
+                <p>Kunne du tænke dig løbende at blive inspireret med de nyeste guides til genanvendelig gaveindpakning? Så tilmeld dig vores nyhedsbrev!</p>
             </div>
             <form action="/action_page.php">
                 <div class="nyhedsbrev-info">
-                  <input type="text" placeholder="Navn" name="name" required>
-                  <input type="text" placeholder="E-mail" name="mail" required>
+                  <input class="nyhedsbrev-indhold" type="text" placeholder="Navn" name="name" required>
+                  <input class="nyhedsbrev-indhold" type="text" placeholder="E-mail" name="mail" required>
                 </div>
               
                 <div class="nyhedsbrev-knap">
@@ -159,15 +174,49 @@
         </div>
       </div>
       
-    
+    <section class="indhold">
     <!-- SEO tekst med forskellige informationer -->
     <div class="container seo">
         <div class="row align-items-start">
           <div class="col-12">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla officiis commodi animi, error corrupti saepe quidem dolorum odit? Pariatur aut doloremque eaque quidem molestias possimus cumque sint, quod reiciendis officia eos rem, modi molestiae, nostrum sequi neque consequuntur. Enim est id possimus quas sed facilis ad nesciunt quidem cupiditate maxime sit porro, voluptate atque placeat non pariatur totam! Ut eos necessitatibus minus velit dolorum aliquam tempore placeat corrupti delectus et. Dolor culpa neque sequi impedit eum ullam vel. Dolores alias aperiam mollitia nisi quos recusandae, odio, quidem quisquam doloremque consequuntur facere cupiditate. Ab, ad? Magnam aut fuga eos aperiam libero!</p>
+            <p><span class="seo-overskrift">Gaveindpakning med genanvendeligt materiale: Inspiration og læring til grønne gaver</span>
+                <br>
+                Velkommen til vores hjemmeside, hvor vi specialiserer os i gaveindpakning med genanvendeligt materiale. Vores mission er at inspirere dig og lære dig, hvordan du kan bruge bæredygtige løsninger til dine gaveindpakninger. Uanset om du forbereder en gave til fødselsdag, jul, værtinde, mors dag, fars dag eller konfirmation, finder du her alt, hvad du behøver for at skabe smukke og miljøvenlige gaver.
+                <br>
+                <br>
+                <span class="seo-overskrift">Inspiration til bæredygtig gaveindpakning</span>
+                <br>
+                Vi elsker at inspirere vores besøgende til at tænke kreativt og bæredygtigt, når det kommer til gaveindpakning. Vores galleri er fyldt med idéer til, hvordan du kan bruge genanvendeligt gavepapir, gavebånd og pynt til enhver lejlighed. Fra simple og elegante designs til mere komplekse og festlige indpakninger, finder du masser af inspiration til at gøre dine gaver ekstra specielle.
+                <br>
+                <br>
+                <span class="seo-overskrift">Genanvendeligt gavepapir og bånd</span>
+                <br>
+                Opdag vores brede udvalg af genanvendeligt gavepapir og gavebånd, der både er smukke og miljøvenlige. Vi tilbyder papir lavet af genbrugsmaterialer og bånd af naturlige fibre, som kan bruges igen og igen. Uanset om du pakker ind til en fødselsdag eller en konfirmation, har vi noget, der passer perfekt til dine behov.
+                <br>
+                <br>
+                <span class="seo-overskrift">DIY guides og videoer</span>
+                <br>
+                For dem, der elsker at lave ting selv, har vi et omfattende udvalg af DIY guides og videoer. Lær hvordan du kan lave din egen pynt og bånd af genanvendelige materialer, og få tips til kreative foldeteknikker, der vil imponere modtageren. Vores trin-for-trin vejledninger gør det nemt for alle at komme i gang, uanset erfaring.
+                <br>
+                <br>
+                <span class="seo-overskrift">Miljøvenlige tips og tricks</span>
+                <br>
+                Vi deler også masser af tips og tricks til, hvordan du kan gøre din gaveindpakning mere miljøvenlig. Lær om de bedste materialer at bruge, og hvordan du kan reducere affald. Vi viser dig, hvordan små ændringer i dine indpakningsvaner kan gøre en stor forskel for miljøet.
+                <br>
+                <br>
+                <span class="seo-overskrift">Skab mindeværdige gaver med god samvittighed</span>
+                <br>
+                Ved at bruge genanvendeligt materiale til gaveindpakning, kan du skabe mindeværdige gaver, som ikke kun glæder modtageren, men også skåner miljøet. Vi opfordrer alle til at tage del i den grønne bølge og vælge bæredygtige løsninger. På vores hjemmeside finder du alt, hvad du behøver for at komme i gang.
+                <br>
+                <br>
+                <span class="seo-overskrift">Særlige anledninger</span>
+                <br>
+                Vi ved, hvor vigtigt det er at gøre noget ekstra ud af gaveindpakningen til særlige anledninger. Derfor har vi kurateret et udvalg af produkter, der er perfekte til fødselsdage, jul, konfirmationer, og meget mere. Vores genanvendelige materialer sikrer, at dine gaver ikke kun ser fantastiske ud, men også er et bæredygtigt valg.
+                Besøg vores hjemmeside i dag og udforsk vores fantastiske udvalg af genanvendeligt gavepapir, gavebånd og pynt. Gør dine gaver specielle med bæredygtige løsninger, der glæder både modtageren og miljøet. Sammen kan vi gøre en forskel og skabe smukke gaver med god samvittighed.</p>
           </div>
         </div>
       </div>
+    </section>
     </section>
     </section>
 
@@ -177,8 +226,8 @@
         <div class="footer-brede">
             <div class="footer-vertikal">
             <div class="footer-et">
-                    <h4 class="footer-overskrift">Inspiration</h4>
-                    <div class="inspiration">
+                    <h4 class="footer-overskrift">INSPIRATION</h4>
+                    <div class="inspiration-footer">
                     <a class="links" href="index.html">FORSIDE</a>
                     <a class="links" href="jul.html">JUL</a>
                     <a class="links" href="fødselsdag.html">FØDSELSDAG</a>

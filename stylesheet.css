@@ -1,30 +1,41 @@
 *{
     padding: 0;
     margin: 0;
+    @font-face {
+        font-family: "brandon-grotesque", "relation", sans-serif;
+        src: url("https://use.typekit.net/jnl1bzm.css");
+    }
 }
 
+/* Tekst og farver */ 
 body{
-    font-family: "brandon-grotesque light", sans-serif;
+    font-family: "brandon-grotesque", "relation", sans-serif;
+    font-weight: light;
     color: #6B5E55;
     background-color: #FFFEFB;
     font-size: 14px;
 }
 
 .special-tekst{
-    font-family: "relation regular", sans-serif;
+    font-family: "relation", sans-serif;
 }
+
+.footer-overskrift{
+    font-weight: bold;
+}
+
+
+
+
+
 
                     /* STYLING AF INDEX-SIDEN */
 /* Header - navigationsmenu og logo */  
-.header{
-    display:flex;
-    justify-content: space-between;
-}
-
 .bg-body-tertiary{
     background-color: #EBE5DA !important;
+    height: 100px;
+    font-weight: bold;
     color: #6B5E55 !important;
-    margin-bottom: 100px;
 }
 
 .dropdown-menu{
@@ -34,13 +45,26 @@ body{
     border: none;
 }
 
+.navbar-collapse{
+    background-color: #EBE5DA;
+}
+
 .dropdown-item:hover, .nav-link:hover{
     background-color: #FFFEFB;
     color: #6B5E55;
 }
 
-.besøg{
+.besog{
     border-bottom: 2px solid #6B5E55;
+}
+
+.logo{
+    height: 120px;
+}
+
+.spacing{
+    display: flex;
+    justify-content: space-between;
 }
 
 /* Overskrift på materiale anbefalingerne */ 
@@ -50,9 +74,24 @@ body{
     background-color: #EBE5DA;
 }
 
-.container{
-    padding-bottom: 100px;
-    padding-top: 50px;
+/* Billeder og tekst fra materialeforslagene på forsiden + billedet fra indledende tekst */ 
+.forslag{
+    padding-bottom: 150px;
+}
+
+.forslag-tekst{
+    margin-top: 80px;
+}
+
+.intro-billede{
+    width: 300px;
+    height: auto;
+}
+
+.intro-billede-centering{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Overskrifterne på alle sider */ 
@@ -60,24 +99,33 @@ h1, h2{
     text-align: center;
 }
 
+.title{
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+
         /* Nyhedsbrev */ 
 .nyhedsbrev{
     background-color: #EBE5DA;
     padding: 20px 15px;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-top: 150px;
+    text-align: center;
 }
+
   
 input[type=text], input[type=submit] {
     padding: 12px;
     margin: 8px 0;
-    width: 100%;
+    width: 80%;
     display: inline-block;
     border: 1px solid #6B5E55;;
     box-sizing: border-box;
     color: #6B5E55;
-    background-color: #F8F7F1
+    background-color: #F8F7F1;
 }
+
   
 input[type=submit] {
     color: #6B5E55;
@@ -92,7 +140,11 @@ input[type=submit]:hover {
 
 /* SEO tekst */ 
 .seo{
-    margin-bottom: 80px;
+    margin-bottom: 100px;
+}
+
+.seo-overskrift{
+    font-weight: bold;
 }
 
 /* footer */ 
@@ -117,7 +169,7 @@ input[type=submit]:hover {
     padding-bottom: 15px;
 }
 
-.inspiration{
+.inspiration-footer{
     display: flex;
     flex-direction: column;
     text-decoration: none;
@@ -142,6 +194,12 @@ input[type=submit]:hover {
 }
 
 
+
+
+
+
+
+
                     /* STYLING AF BEGIVENHEDS-UNDERSIDERNE */ 
 /* Overskrift på pynt elementerne */ 
 .underside-overskrift{
@@ -151,14 +209,41 @@ input[type=submit]:hover {
 }
 
 /* hacks/tips til børneinvolvering */ 
-.børnehacks{
+.bornehacks{
     background-color: #EBE5DA;
+    padding: 50px 0;
+    padding-left: 100px; 
+    padding-right: 100px;
+    font-size: 1.3em;
+}
+
+
+/* videoerne */ 
+iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.iframe-container{
+    width: 100%;
+    /* vi vil fastholde 16:9 formatet. 9 divideret med 16 er 0.5625 */ 
+    height: calc(100vw * 0.5625);
+}
+
+video{
+    width: 100%;
+    height: auto;
 }
 
         /* Styling af inspirationsbillederne med lightbox */
 .row > .column {
-    padding: 0 8px;
+    padding: 8px 5px;
     box-sizing: border-box;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
 }
   
 .row:after {
@@ -169,7 +254,7 @@ input[type=submit]:hover {
   
 .column {
     float: left;
-    width: 25%;
+    width: 24%;
 }
   
 /* The Modal (background) */
@@ -281,9 +366,66 @@ img.hover-shadow {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/* tekst omkring materialevalg, som henviser til forsiden */ 
+.materiale-link{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+/* eksterne links styling */ 
+.eksterne-links{
+    color: #6B5E55;
+}
+
+/* eksternt link til instagram for ekstra inspiration */ 
+.inspiration-link{
+    text-align: center;
+}
+
+/* billederne på undersiderne samt andre steder */ 
+.avis, .hjerter, .tegn{
+    width: 80%;
+    height: auto;
+}
+
+.rund{
+    width: 10%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.rund img{
+    width: 50px;
+}
+
+
+                    /* STYLING AF OM OS SIDEN */ 
+.om-os-billede{
+    height: auto;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.om-os-billede-placering{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.om-os-tekst{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+
+
 
                     /* STYLING AF KONTAKTSIDEN */ 
 /* kontaktformular */ 
+.luft{
+    margin-top: 50px;
+}
+
 input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
@@ -322,13 +464,32 @@ input[type=submit]:hover {
     padding-top: 15px;
 }
 
+.kontakt-logo{
+    height: 250px;
+    margin-bottom: 100px;
+}
+
+.kontakt-logo-placering{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
-                    /* MEDIA QUERRY FOR MOBIL VERSIONEN */ 
+
+
+
+
+
+                    /* MEDIA QUERRY FOR MOBIL VERSIONEN */
 @media screen and (max-width: 768px) {
     /* Overskrift på materialeanbefaldningerne */ 
     .overskrift{
         text-align: center;
+    }
+
+    .index-overskrift{
+        font-size: x-large;
     }
 
     /* Overskrift på undersiderne pynt elementerne */ 
@@ -340,9 +501,59 @@ input[type=submit]:hover {
     /* Footer */ 
     .footer-brede{
         text-align: center;
+        margin-top: 50px;
+    }
+
+    /* logo */ 
+    .bg-body-tertiary{
+        padding-bottom: 130px;
+    }
+
+    /* runde materiale billeder på forsiden */ 
+    .indpaknings-billede{
+        padding-bottom: 25px;
+        border-radius: 50%;
+        width: 300px;
+        height: auto;
+    }
+
+    .materiale{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Kontaktformular */ 
+    .kontaktformular{
+        width: 90%;
+    }
+
+    .underside-overskrift{
+        text-align: center;
+    }
+
+    /* centering af tekst og billeder (tips) på undersider */ 
+    .underside-overskrift-centering, .tegn-centering, .avis-centering, .hjerter-centering, .rund-centering{
+        display: flex;
+        justify-content: center;
+    }
+
+    .tegn-centering, .avis-centering, .hjerter-centering, .rund-centering{
+        padding: 20px 0;
+    }
+
+    /* luft ved inspiration */ 
+    .inspiration{
+    padding-top: 100px;
+    padding-bottom: 150px;
     }
 
 }
+
+
+
+
+
 
                     /* MEDIA QUERRY FOR TABLET VERSIONEN */
 @media screen and (min-width: 768px){
@@ -363,6 +574,32 @@ input[type=submit]:hover {
         display: flex; 
         flex-direction: row-reverse;
     }
+
+    .indpaknings-billede{
+        border-radius: 50%;
+        height: auto;
+        width: 300px;
+    }
+
+    /* Kontaktformular */ 
+    .kontaktformular{
+        width: 70%;
+    }
+
+    .rund{
+        width: 300px;
+        height: auto;
+    }
+
+    .pynt-tekst{
+        margin-top: 90px;
+    }
+
+    /* luft mellem de forskellige container */ 
+    .pynt, .inspiration{
+    margin-top: 100px;
+    margin-bottom: 150px;
+    }
 }
 
                     /* MEDIA QUERRY FOR DESKTOP VERSIONEN */ 
@@ -373,17 +610,62 @@ input[type=submit]:hover {
 
     /* opsætning af en centerelt kasse med diverse indhold */ 
     .indholdskasse{
-        width: 80%;
+        width: 70%;
         background-color: #FFFEFB;
+    }
+
+    .indhold{
+        margin-left: 100px; 
+        margin-right: 100px;
+        font-size: 1.3em;
+    }
+
+    .forside{
+        margin-top: 350px;
     }
 
     .indholdskasse-fader{
         display: flex;
         justify-content: center;
+        margin-top: 100px;
     }  
 
     /* Overskrift på materialeanbefaldningerne */ 
     .overskrift{
         width: 100%;
     }
+
+    /* youtube videoerne */ 
+    iframe{
+        height: 70%;
+        margin-top: 50px;
+    }
+
+    /* Kontaktformular */ 
+    .kontaktformular{
+        width: 50%;
+    }
+
+    .rund{
+        width: 300px;
+        height: auto;
+        margin-left: 25px;
+    }
+
+    .intro-video{
+        position: absolute; 
+        z-index: -1;
+    }
 }
+
+@media screen and (min-width: 1200px) {
+    .rund{
+        width: 300px;
+        height: auto;
+        margin-left: 90px;
+    }
+
+    .forside{
+        margin-top: 450px;
+    }
+} 
