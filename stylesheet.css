@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     @font-face {
+        /* font-family: 'MyAdobeFont'; */
         font-family: "brandon-grotesque", "relation", sans-serif;
         src: url("https://use.typekit.net/jnl1bzm.css");
     }
@@ -10,19 +11,17 @@
 /* Tekst og farver */ 
 body{
     font-family: "brandon-grotesque", "relation", sans-serif;
+    /* font-family: 'MyAdobeFont'; */
     font-weight: light;
     color: #6B5E55;
     background-color: #FFFEFB;
-    font-size: 14px;
+    font-size: 1.3em;
 }
 
 .special-tekst{
     font-family: "relation", sans-serif;
 }
 
-.footer-overskrift{
-    font-weight: bold;
-}
 
 
 
@@ -30,18 +29,22 @@ body{
 
 
                     /* STYLING AF INDEX-SIDEN */
-/* Header - navigationsmenu og logo */  
+/* Header - navigationsmenu og logo */ 
 .bg-body-tertiary{
     background-color: #EBE5DA !important;
-    height: 120px;
     font-weight: bold;
+    font-size: 18px;
     color: #6B5E55 !important;
+}
+
+.navn{
+    text-align: center;
 }
 
 .dropdown-menu{
     background-color: #EBE5DA;
     color: #6B5E55;
-    font-size: 14px;
+    font-size: 18px;
     border: none;
 }
 
@@ -54,17 +57,25 @@ body{
     color: #6B5E55;
 }
 
+.nav-item{
+    padding: 0 10px !important;
+}
+
 .besog{
     border-bottom: 2px solid #6B5E55;
 }
 
 .logo{
-    height: 120px;
+    height: 80px;
 }
 
-.spacing{
-    display: flex;
-    justify-content: space-between;
+.logo-desktop{
+    display: none;
+}
+
+.vidste-du{
+    font-weight: bold;
+    padding-bottom: 20px;
 }
 
 /* Overskrift på materiale anbefalingerne */ 
@@ -76,11 +87,7 @@ body{
 
 /* Billeder og tekst fra materialeforslagene på forsiden + billedet fra indledende tekst */ 
 .forslag{
-    padding-bottom: 150px;
-}
-
-.forslag-tekst{
-    margin-top: 80px;
+    padding-bottom: 100px;
 }
 
 .intro-billede{
@@ -92,6 +99,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.afstand{
+    margin-bottom: 150px;
 }
 
 /* Overskrifterne på alle sider */ 
@@ -113,7 +124,6 @@ h1, h2{
     margin-top: 150px;
     text-align: center;
 }
-
   
 input[type=text], input[type=submit] {
     padding: 12px;
@@ -160,11 +170,14 @@ input[type=submit]:hover {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    font-size: 14px; 
 
 }
 
 .footer-overskrift{
     padding-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .links{
@@ -178,7 +191,7 @@ input[type=submit]:hover {
     flex-direction: column;
     text-decoration: none;
     color: #6B5E55;
-    padding: 10px 0;  
+    padding: 10px 0; 
 }
 
 .info{
@@ -191,11 +204,34 @@ input[type=submit]:hover {
     font-size: 30px;
     color: #6B5E55;
     padding: 10px 0; 
+
 }
 
 .footer-et, .footer-to, .footer-tre{
     margin: 20px;
 }
+
+/* back to top pil */ 
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #EBE5DA;
+    color: #6B5E55;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+    color: #F8F7F1;
+  }
 
 
 
@@ -216,22 +252,24 @@ input[type=submit]:hover {
 .bornehacks{
     background-color: #EBE5DA;
     padding: 50px 0;
-    padding-left: 100px; 
-    padding-right: 100px;
-    font-size: 1.3em;
+    padding-left: 20px;
+    padding-right: 20px;
 }
-
 
 /* videoerne */ 
 iframe{
     width: 100%;
     height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin-top: 30px;
 }
 
 .iframe-container{
+    position: relative;
     width: 100%;
-    /* vi vil fastholde 16:9 formatet. 9 divideret med 16 er 0.5625 */ 
-    height: calc(100vw * 0.5625);
+    padding-top: 47.37%;
 }
 
 video{
@@ -240,12 +278,12 @@ video{
 }
 
         /* Styling af inspirationsbillederne med lightbox */
-.row > .column {
+.light > .column {
     padding: 8px 5px;
     box-sizing: border-box;
 }
 
-.row{
+.light{
     display: flex;
     justify-content: center;
 }
@@ -326,6 +364,7 @@ video{
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
+    text-decoration: none;
 }
   
 /* Position the "next button" to the right */
@@ -367,7 +406,7 @@ img.hover-shadow {
 }
   
 .hover-shadow:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 8px 4px 8px 4px rgba(0, 0, 0, 0.2), 20px 6px 20px 6px rgba(0, 0, 0, 0.19);
 }
 
 .lukket, .open{
@@ -387,7 +426,8 @@ img.hover-shadow {
 }
 
 .infografik{
-    margin-top: 100px;
+    margin-bottom: 150px;
+    margin-top: 150px;
 }
   
 
@@ -397,9 +437,39 @@ img.hover-shadow {
     padding-bottom: 50px;
 }
 
-/* eksterne links styling */ 
+/* eksterne links og interne styling */ 
 .eksterne-links{
     color: #6B5E55;
+}
+
+.interne-links{
+    background-color: #EBE5DA;
+    margin: 20px 20px;
+    padding: 15px 50px;
+    border: none;
+    width: 250px;
+}
+
+.interne-links a{
+    text-decoration: none;
+    color: #6B5E55;
+}
+
+
+.interne-links-centering{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+} 
+
+.interne-links:hover, .interne-links a:hover{
+    background-color: #555;
+    color: #F8F7F1;
+}
+
+.bliv-inspireret-her{
+    margin-top: 100px;
 }
 
 /* eksternt link til instagram for ekstra inspiration */ 
@@ -413,15 +483,18 @@ img.hover-shadow {
     height: auto;
 }
 
-.rund{
-    width: 10%;
-    height: auto;
-    border-radius: 50%;
+.rund-luft{
+    padding-bottom: 50px;
 }
 
-.rund img{
-    width: 50px;
+.tegn-centering, .avis-centering, .hjerte-centering, .rund-centering{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
+
 
 
 
@@ -439,9 +512,8 @@ img.hover-shadow {
     align-items: center;
 }
 
-.om-os-tekst{
-    margin-top: 50px;
-    margin-bottom: 100px;
+.om-os-navne{
+    font-weight: bold;
 }
 
 
@@ -511,7 +583,6 @@ input[type=submit]:hover {
 
 
 
-
                     /* MEDIA QUERRY FOR MOBIL VERSIONEN */
 @media screen and (max-width: 768px) {
     /* Overskrift på materialeanbefaldningerne */ 
@@ -535,15 +606,13 @@ input[type=submit]:hover {
         margin-top: 50px;
     }
 
-    /* logo */ 
-    .bg-body-tertiary{
-        padding-bottom: 130px;
+    /* header */ 
+    .navn{
+        display: none;
     }
 
-    /* runde materiale billeder på forsiden */ 
+    /* runde materiale billeder og tekst på forsiden */ 
     .indpaknings-billede{
-        padding-bottom: 25px;
-        border-radius: 50%;
         width: 300px;
         height: auto;
     }
@@ -554,23 +623,46 @@ input[type=submit]:hover {
         align-items: center;
     }
 
+    .forslag-tekst{
+        margin-top: 20px;
+    }
+
     /* Kontaktformular */ 
     .kontaktformular{
         width: 90%;
     }
 
+    /* navne på pyntematerialer */ 
     .underside-overskrift{
         text-align: center;
     }
 
-    /* centering af tekst og billeder (tips) på undersider */ 
-    .underside-overskrift-centering, .tegn-centering, .avis-centering, .hjerter-centering, .rund-centering{
-        display: flex;
-        justify-content: center;
+    /* de runde billeder på begivenhedsundersiderne */ 
+    .rund{
+        width: 300px;
+        height: auto;
     }
 
-    .tegn-centering, .avis-centering, .hjerter-centering, .rund-centering{
+    /* tekst til pytematerialerne */ 
+    .pynt-tekst{
+        margin-top: 20px;
+    }
+
+    /* centering af tekst og billeder (tips) på undersider */ 
+    .underside-overskrift-centering{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tegn-centering, .avis-centering, .hjerte-centering{
         padding: 20px 0;
+    }
+
+    /* størrelse af billederne ved tips/børnehacks*/ 
+    .tegn, .avis, .hjerter{
+        width: 60%;
+        height: auto;
     }
 
     /* luft ved inspiration */ 
@@ -579,6 +671,15 @@ input[type=submit]:hover {
     padding-bottom: 150px;
     }
 
+    /* placering af det første billede på index siden */ 
+    .intro-billede-centering{
+        padding-bottom: 50px;
+    }
+
+    /* interne links */ 
+    .interne-links-centering{
+        flex-direction: column;
+    }
 }
 
 
@@ -588,9 +689,18 @@ input[type=submit]:hover {
 
                     /* MEDIA QUERRY FOR TABLET VERSIONEN */
 @media screen and (min-width: 768px){
-    /* Overskrift på materialeanbefaldningerne */ 
-    .overskrift{
+    /* Overskrift på materialeanbefaldningerne og pyntforslagene */ 
+    .overskrift, .underside-overskrift{
         padding: 0 20px;
+    }
+
+    .navbar-collapse{
+        display: flex;
+        justify-content: end;
+    }
+
+    .navn{
+        display: none;
     }
 
     /* Footer */ 
@@ -607,9 +717,8 @@ input[type=submit]:hover {
     }
 
     .indpaknings-billede{
-        border-radius: 50%;
+        width: 270px;
         height: auto;
-        width: 300px;
     }
 
     /* Kontaktformular */ 
@@ -617,19 +726,43 @@ input[type=submit]:hover {
         width: 70%;
     }
 
+    /* de runde billeder på begivenhedsundersiderne */ 
     .rund{
-        width: 300px;
+        width: 100%;
         height: auto;
     }
 
-    .pynt-tekst{
-        margin-top: 90px;
+    /* luft mellem de forskellige container */ 
+    .inspiration{
+        margin-top: 100px;
+        margin-bottom: 150px;
     }
 
-    /* luft mellem de forskellige container */ 
-    .pynt, .inspiration{
-    margin-top: 100px;
-    margin-bottom: 150px;
+    .pynt{
+        margin-bottom: 50px;
+    }
+
+    /* tekst stykke på om-os siden*/ 
+    .om-os-tekst{
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
+    /* første billede på forsiden */ 
+    .intro-billede{
+        width: 100%;
+        height: auto;
+    }
+
+    /* børnehacks/tips */ 
+    .tip{
+        text-align: left;
+    }
+
+    /* luft til nyhedsbrev tekst */ 
+    .nyhedsbrev-tekst{
+        padding-left: 100px;
+        padding-right: 100px;
     }
 }
 
@@ -637,9 +770,8 @@ input[type=submit]:hover {
 
 
 
-
                     /* MEDIA QUERRY FOR DESKTOP VERSIONEN */ 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1100px){
     body{
         background-color: #F8F7F1;
     }
@@ -648,41 +780,27 @@ input[type=submit]:hover {
     .indholdskasse{
         width: 70%;
         background-color: #FFFEFB;
+        margin-top: 150px;
     }
 
     .indhold{
         margin-left: 100px; 
         margin-right: 100px;
-        font-size: 1.3em;
     }
 
     .forside{
-        margin-top: 350px;
+        margin-top: 400px;
     }
 
     .indholdskasse-fader{
         display: flex;
         justify-content: center;
-        margin-top: 100px;
     }  
 
     /* Overskrift på materialeanbefaldningerne */ 
     .overskrift{
         width: 100%;
-    }
-
-    /* youtube videoerne */ 
-    iframe{
-        height: 70%;
-        margin-top: 50px;
-    }
-
-    /* runder billeder på begivenhedsundersiderne */ 
-    .rund{
-        width: 300px;
-        height: auto;
-        margin-left: 25px;
-    }
+        }
 
     /* forside video */ 
     .intro-video{
@@ -690,26 +808,48 @@ input[type=submit]:hover {
         z-index: -1;
     }
 
-    .infografik{
-        margin-top: 10px;
-    }
-   
-    .infografik-billede{
-        width: 100%;
-        height: auto;
+    /* tips/ børnehacks */ 
+    .bornehacks{
+        padding-left: 100px; 
+        padding-right: 100px;
     }
 }
 
-@media screen and (min-width: 1200px) {
-    /* runder billeder på begivenhedsundersiderne */ 
-    .rund{
-        width: 300px;
-        height: auto;
-        margin-left: 90px;
+
+
+
+
+                    /* MEDIA QUERRY FOR ÆNDRINGER TIL HEADEREN */ 
+@media screen and (min-width: 1200px){
+    /* header */ 
+    .logo-desktop{
+        display: block;
+        height: 100px;
+        padding-bottom: 20px;
     }
 
-    /* placering af indhold på forsiden */ 
-    .forside{
-        margin-top: 450px;
+    .logo{
+        display: none;
     }
-} 
+
+    .navn{
+        display: block;
+        padding-left: 320px;
+    }
+
+    .bg-body-tertiary{
+        padding-left: 60px !important;
+    } 
+}
+
+
+
+
+                    /* MEDIA QUERRY FOR DESKTOP VERSIONEN */ 
+@media screen and (min-width: 1380px) {
+    /* header  */
+    .navn{
+        display: block;
+        padding-left: 470px;
+    }
+}

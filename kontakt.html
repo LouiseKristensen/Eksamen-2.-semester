@@ -13,6 +13,7 @@
  <!-- link til adobe-fonts -->
  <link rel="stylesheet" href="https://use.typekit.net/jnl1bzm.css">
  <link rel="stylesheet" href="stylesheet.css">
+ <link rel="stylesheet" href="stylesheet.min.css">
  <link rel="stylesheet" href="javascript.js">
 
  <!-- script for Emailjs til kontaktformular -->
@@ -43,12 +44,15 @@
 <body>
  <!-- Header med navigationsmenu og virksomhedslogo -->
  <header>
-    <nav class="navbar navbar-expand-md bg-body-tertiary spacing">
-        <div class="container-fluid spacing">
-          <div>
-          <a class="navbar-brand" href="index.html"><img class="logo" src="img/logo.png" alt="Virksomheden Kære Louises logo"></a>
-          </div>
-          <div>
+    <nav class="navbar navbar-expand-md bg-body-tertiary">
+        <div class="container-fluid">
+            <div>
+                <a class="navbar-brand" href="index.html"><img class="logo" src="img/logo.webp" alt="virksomheden Kære Louises logo"></a>
+                <a class="navbar-brand" href="index.html"><img class="logo-desktop" src="img/lille_logo_22.webp" alt="virksomheden Kære Louises logo"></a>
+                </div>
+                <div>
+                  <h1 class="navn">KÆRE LOUISE</h1>
+                </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -60,8 +64,8 @@
                     </a>
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="jul.html">Jul</a></li>
-                      <li><a class="dropdown-item" href="fødselsdag.html">Fødselsdag</a></li>
-                      <li><a class="dropdown-item" href="værtinde.html">Værtinde</a></li>
+                      <li><a class="dropdown-item" href="foedselsdag.html">Fødselsdag</a></li>
+                      <li><a class="dropdown-item" href="vaertinde.html">Værtinde</a></li>
                     </ul>
                   </li>
               <li class="nav-item">
@@ -71,11 +75,10 @@
                 <a class="nav-link disabled" href="#">Webshop</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="kontakt.html">Kontakt</a>
+                <a class="nav-link besog" href="kontakt.html">Kontakt</a>
               </li>
             </ul>
           </div>
-        </div>
         </div>
       </nav>
 </header>
@@ -93,10 +96,10 @@
         </div>
         <div class="row align-items-start">
           <div class="col-sm-12 col-md-6 col-lg-6">
-           <p>Skulle du sidde inde med nogle spørgsmål omkring gaveindpakning, genanvendelig materialer, vores videoer og guide eller noget helt andet.</p>
+           <p>Skulle du sidde inde med nogle spørgsmål omkring gaveindpakning, genanvendelig materialer, vores videoer og guide eller noget helt andet. Så er du mere end velkommen til at udfylde vores kontaktformular nedenfor, hvor du kan stille os alle de spørgsmål du skulle have. Vi vil vende tilbage så hurtigt vi kan!</p>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-6">
-           <p>Så er du mere end velkommen til at udfylde vores kontaktformular nedenfor, hvor du kan stille os alle de spørgsmål du skulle have. Vi vil vende tilbage så hurtigt vi kan!</p>
+           <p>Du kan også følge os på Instagram, Youtube eller Facebook, for at holde dig opdateret på alle de nyeste indpakningsmåder og videoer/guides, vi løbende kommer med.</p>
           </div>
         </div>
       </div>
@@ -129,10 +132,13 @@
     <div class="container kontakt-logo-placering">
         <div class="row align-items-start">
             <div class="col-12">
-            <img class="kontakt-logo" src="img/logo.png" alt="virksomheden Kære Louises logo">
+            <img class="kontakt-logo" src="img/logo.webp" alt="virksomheden Kære Louises logo">
             </div>
         </div>
     </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
 </section>
 </section>
 </section>
@@ -147,8 +153,8 @@
                 <div class="inspiration-footer">
                 <a class="links" href="index.html">FORSIDE</a>
                 <a class="links" href="jul.html">JUL</a>
-                <a class="links" href="fødselsdag.html">FØDSELSDAG</a>
-                <a class="links" href="værtinde.html">VÆRTINDE</a>
+                <a class="links" href="foedselsdag.html">FØDSELSDAG</a>
+                <a class="links" href="vaertinde.html">VÆRTINDE</a>
                 </div>
         </div>
         <div class="footer-to">
@@ -179,5 +185,24 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <!-- Fontawesome script-->
 <script src="https://kit.fontawesome.com/5a4a563485.js" crossorigin="anonymous"></script>
+<!-- script til tilbage til toppen pil -->
+<script>
+    let mybutton = document.getElementById("myBtn");
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
 </body>
 </html>

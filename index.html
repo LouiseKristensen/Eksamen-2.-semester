@@ -13,17 +13,21 @@
     <!-- link til adobe-fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/jnl1bzm.css">
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="stylesheet.min.css">
     <link rel="stylesheet" href="javascript.js">
 </head>
 <body>
     <!-- Header med navigationsmenu og virksomhedslogo -->
     <header>
-        <nav class="navbar navbar-expand-md bg-body-tertiary spacing">
-            <div class="container-fluid spacing">
+        <nav class="navbar navbar-expand-md bg-body-tertiary">
+            <div class="container-fluid">
               <div>
-              <a class="navbar-brand" href="index.html"><img class="logo" src="img/logo.png" alt="virksomheden Kære Louises logo"></a>
+              <a class="navbar-brand" href="index.html"><img class="logo" src="img/logo.webp" alt="virksomheden Kære Louises logo"></a>
+              <a class="navbar-brand" href="index.html"><img class="logo-desktop" src="img/lille_logo_22.webp" alt="virksomheden Kære Louises logo"></a>
               </div>
               <div>
+                <h1 class="navn">KÆRE LOUISE</h1>
+              </div>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -35,8 +39,8 @@
                         </a>
                         <ul class="dropdown-menu">
                           <li><a class="dropdown-item" href="jul.html">Jul</a></li>
-                          <li><a class="dropdown-item" href="fødselsdag.html">Fødselsdag</a></li>
-                          <li><a class="dropdown-item" href="værtinde.html">Værtinde</a></li>
+                          <li><a class="dropdown-item" href="foedselsdag.html">Fødselsdag</a></li>
+                          <li><a class="dropdown-item" href="vaertinde.html">Værtinde</a></li>
                         </ul>
                       </li>
                   <li class="nav-item">
@@ -51,33 +55,37 @@
                 </ul>
               </div>
             </div>
-            </div>
           </nav>
     </header>
+           
+
+    
 
        <!-- Introvideo/inspirationsvideo i toppen af siden  -->
        <div class="col-12">
         <video class="intro-video" autoplay muted loop>
-            <source src="video/forsidevideo_1.mp4" alt="introduktionsvideo for Kære Louise, hvor man bliver taget lidt med bag scenen" type="video/mp4">
+            <source class="video" src="video/forsidevideo_1.mp4" alt="introduktionsvideo for Kære Louise, hvor man bliver taget lidt med bag scenen" type="video/mp4">
         </video>
     </div>
 
+    
     <!-- Samlet kasse med alt sidens indhold -->
     <section class="indholdskasse-fader">
     <section class="indholdskasse forside">
     <section class="indhold">
      <!-- General information omkring danskernes gavepapirforbrug -->
-    <div class="container ">
+    <div class="container">
         <div class="title">
-        <h1 class="special-tekst">Vidste du at vi</h1>
-        <h2 class="index-overskrift">SPILDER 800 TONS GAVEPAPIR UD OM ÅRET?</h2>
+        <h1 class="special-tekst">Din inspiration til</h1>
+        <h2 class="index-overskrift">GENANVENDELIG GAVEINDPAKNING</h2>
         </div>
         <div class="row align-items-start omvendt afstand">
           <div class="col-sm-12 col-md-6 col-lg-6 intro-billede-centering">
-            <img  class="img-fluid intro-billede" src="img/foeds_stack.webp" alt="intro-billede af en et gavetårn">
+            <img  class="img-fluid intro-billede" src="img/foeds_stack.webp" alt="intro-billede af en et gavetårn i genanvendelig gaveindpakning">
           </div>
           <div class="col-sm-12 col-md-6 col-lg-6">
-            <p>Danskerne bruger hvert år sammenlagt 825 ton gavepapir. Dette er et enormt tal at tage stilling til, og for at gøre det endnu værre, kan det meste af gavepapiret ikke genanvendes. Dette skyldes bl.a. at papiret er fyldt med glitter, belagt med plast eller metal, eller at papiret er produceret i så dårlig kvalitet, at fibrene ikke kan genanvendes. Hvis du derimod vælger at pakke gaver ind i genanvendelige materialer (såsom stof og aviser), vil det spare en del på ressourcetrækket. 
+            <p><strong>Vidste du at vi i Danmark spilder 825 tons gavepair hvert år?</strong>
+             Dette er et enormt tal at tage stilling til, og for at gøre det endnu værre, kan det meste af gavepapiret ikke genanvendes. Dette skyldes bl.a. at papiret er fyldt med glitter, belagt med plast eller metal, eller at papiret er produceret i så dårlig kvalitet, at fibrene ikke kan genanvendes. Hvis du derimod vælger at pakke gaver ind i genanvendelige materialer (såsom stof og aviser), vil det spare en del på ressourcetrækket. 
             <br>
             <a class="eksterne-links" href="https://affaldplus.dk/julens-indpakning" target="_blank">Læs mere her</a></p>
           </div>
@@ -87,67 +95,73 @@
 
     <!-- Anbefaldninger af gode genanvendelige materialer til gaveindpakning -->
       <div class="container">
-        <h2>GODE MATERIALER TIL GAVEINDPAKNING</h2>
-
+        <h1 class="special-tekst">Gode materialer til gaveindpakning</h1>
+        <br>
+        <br>
         <!-- Anbefalning 1 -->
         <div class="row align-items-start forslag">
-          <div class="col-sm-12 col-md-6 col-lg-6 materiale">
-            <img class="img-fluid indpaknings-billede et" src="..." alt="...">
+          <div class="col-sm-12 col-md-3 col-lg-3 materiale">
+            <img class="img-fluid indpaknings-billede" src="img/rund_gaver.webp" alt="en gave pakket ind i genanvendelig gaveindpakning med snor">
           </div>
-            <div class="col-sm-12 col-md-6 col-lg-6 forslag-tekst">
+            <div class="col-sm-12 col-md-9 col-lg-9 forslag-tekst">
             <div class="overskrift-forslag">
             <h3 class="overskrift">Gem hvad du modtager</h3>
             </div>
-            <p>Den absolut bedste tendens indenfor genanvendelig gaveindpakning er at gemme bånd, pynt, papir osv. som du selv modtager fra andre. Stof-bånd kan gemmes i en æske og bruges igen. Gavepapir kan rettes ud og tape kan fjernes, så dette også kan pryde en ny gave og æsker fra f.eks. smykker, sko eller service kan pyntes og bruges igen.</p>
-            <a  class="eksterne-links" href="#" target="_blank">Køb her</a>
+            <p>Den absolut bedste tendens indenfor genanvendelig gaveindpakning er at gemme bånd, pynt, papir osv. som du selv modtager fra andre. Stof-bånd kan gemmes i en æske og bruges igen. Gavepapir kan rettes ud og tape kan fjernes, så dette også kan pryde en ny gave og æsker fra f.eks. smykker, sko eller service kan pyntes og bruges igen. Man kan også købe materialerne brugt, hvis ikke man har hvad man mangler. <br> <a class="eksterne-links" href="https://www.dba.dk/soeg/?soeg=gamle+%c3%a6sker" target="_blank"> Kan købes her</a></p>
             </div>
           </div>
 
         <!-- Anbefaldning 2 -->
-          <div class="row align-items-start forslag omvendt">
-            <div class="col-sm-12 col-md-6 col-lg-6 materiale">
-              <img class="img-fluid indpaknings-billede to" src="img/jul1.webp" alt="en gave pakket ind med genanvendeligt gavepapir og silkebånd">
+          <div class="row align-items-start forslag">
+            <div class="col-sm-12 col-md-3 col-lg-3 materiale">
+              <img class="img-fluid indpaknings-billede" src="img/rund_jul1.webp" alt="en gave pakket ind med genanvendelig gaveindpakning og silkebånd">
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-6 forslag-tekst">
+            <div class="col-sm-12 col-md-9 col-lg-9 forslag-tekst">
                 <div class="overskrift-forslag">
-                <h3 class="overskrift">Genanvendelige gavepapir</h3>
+                <h3 class="overskrift ekstra">Genanvendelige gavepapir</h3>
                 </div>
-              <p>Når du bruger genanvendeligt gavepapir, hjælper du med at reducere mængden af gavepapir som går til spilde. Genanvendeligt gavepapir er lavet af plastik og er derfor meget slidstærkt. Det holder altså til at blive brugt mindst 10 gange og tape kan hives af uden at ødelægge papiret.</p>
-              <a class="eksterne-links" href="https://vissevasse.dk/collections/everwrap/products/everwrap-sheet-08" target="_blank">Køb her</a>
+              <p>Når du bruger genanvendeligt gavepapir, hjælper du med at reducere mængden af gavepapir som går til spilde. Genanvendeligt gavepapir er lavet af plastik og er derfor meget slidstærkt. Det holder altså til at blive brugt mindst 10 gange og tape kan hives af uden at ødelægge papiret. <a class="eksterne-links" href="https://vissevasse.dk/collections/everwrap/products/everwrap-sheet-08" target="_blank">Kan købes her</a></p>
             </div>
           </div>
         
           <!-- Anbefaldning 3 -->
           <div class="row align-items-start forslag">
-            <div class="col-sm-12 col-md-6 col-lg-6 materiale">
-              <img class="img-fluid indpaknings-billede et" src="img/jul4.webp" alt="en gave pakket ind i et stofklæde via metoden furoshiki, med et stofbånd">
+            <div class="col-sm-12 col-md-3 col-lg-3 materiale">
+              <img class="img-fluid indpaknings-billede" src="img/rund_jul4.webp" alt="en gave pakket ind i et stofklæde (genanvendelig gaveindpakning) via metoden furoshiki, med et stofbånd">
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-6 forslag-tekst">
+            <div class="col-sm-12 col-md-9 col-lg-9 forslag-tekst">
                 <div class="overskrift-forslag">
-                <h3 class="overskrift">Furoshiki - stof indpakning</h3>
+                <h3 class="overskrift ekstra">Furoshiki - stof indpakning</h3>
                 </div>
-              <p>Furoshiki er den traditionelle japanske måde at pakke gaver ind, eller at transportere varer på, ved at bruge et stykke stof. Japanerne har i mere end 1300 år haft glæde af at pakke gaver ind i det firkantede stykke stof, som foldes og bindes sammen. Til dette vil du kunne bruge viskestykker, tørklæder, pudebetræk med mere.
-                <br>
-                <br>
-              Til en værtinde gave, kan man f.eks. også vikle et tørklæde rundt om en flaske vin. Der er flere fordele ved at bruge tørklæder; de giver et flot og unikt præg på gaven, og samtidig er det 2-i-1, da tørklædet bliver en del af gaven, som kan bruges igen og igen.
+              <p>Furoshiki er den traditionelle japanske måde at pakke gaver ind, eller at transportere varer på, ved at bruge et stykke stof. Japanerne har i mere end 1300 år haft glæde af at pakke gaver ind i det firkantede stykke stof, som foldes og bindes sammen. Til dette vil du kunne bruge viskestykker, tørklæder, pudebetræk med mere. <a class="eksterne-links" href="https://denkinesiskebutik.dk/vare/furoshiki-gaveindpakning/" target="_blank">Kan købes her</a>
               </p>
-              <a class="eksterne-links" href="https://denkinesiskebutik.dk/vare/furoshiki-gaveindpakning/" target="_blank">Køb her</a>
             </div>
           </div>
 
            <!-- Anbefaldning 4 -->
-           <div class="row align-items-start omvendt">
-            <div class="col-sm-12 col-md-6 col-lg-6 materiale">
-              <img class="img-fluid indpaknings-billede to" src="img/avis_buket.webp" alt="buket blomster pakket ind i en avis">
+           <div class="row align-items-start">
+            <div class="col-sm-12 col-md-3 col-lg-3 materiale">
+              <img class="img-fluid indpaknings-billede" src="img/rund_blomster.webp" alt="blomster der kan anvendes til at ens gaver">
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-6 forslag-tekst">
+            <div class="col-sm-12 col-md-9 col-lg-9 forslag-tekst">
                 <div class="overskrift-forslag">
                 <h3 class="overskrift">Naturens egen pynt</h3>
                 </div>
-              <p>Naturen byder hele året på smukke og meget forskellige grene, kviste og græne som kan pryde enhver gave til alle årets fejringer. Om sommeren kan blomster findes ved vejkanter eller i haven og om vinteren kan gran klippes af juletræet. Derudover kan appelsiner tørres og pynte på en julegave. Derudover kan du f.eks. finde eukalyptusgrene hos blomsterhandlere som kan tørres og holde som pynt til hele årets gaver.</p>
-              <a class="eksterne-links" href="https://www.kredslob.dk/sorteringsguiden/papir/papir/aviser" target="_blank">Køb her</a>
+              <p>Naturen byder hele året på smukke og meget forskellige grene og kviste som kan pryde enhver gave til alle årets fejringer. Om sommeren kan blomster findes ved vejkanter eller i haven og om vinteren kan gran klippes af juletræet. Derudover kan appelsiner tørres og pynte på en julegave. Derudover kan du f.eks. finde eukalyptusgrene hos blomsterhandlere som kan tørres og holde som pynt til hele årets gaver. <a class="eksterne-links" href="https://frilandsblomster.dk/" target="_blank">Kan købes her</a>
+            </p>
             </div>
           </div>
+      </div>
+
+
+
+      <div class="bliv-inspireret-her">
+        <h1 class="special-tekst">Bliv inspireret her!</h1>
+            <div class="interne-links-centering">
+                <button class="interne-links"><a href="jul.html">JUL</a></button>
+                <button class="interne-links"><a href="foedselsdag.html">FØDSELSDAG</a></button>
+                <button class="interne-links"><a href="vaertinde.html">VÆRTINDE</a></button>
+            </div>
       </div>
       </section>
 
@@ -158,7 +172,7 @@
           <div class="col-12">
             <div>
                 <h2 class="special-tekst">Nyhedsbrev</h2>
-                <p>Kunne du tænke dig løbende at blive inspireret med de nyeste guides til genanvendelig gaveindpakning? Så tilmeld dig vores nyhedsbrev!</p>
+                <p class="nyhedsbrev-tekst">Kunne du tænke dig løbende at blive inspireret med de nyeste guides til genanvendelig gaveindpakning? Så tilmeld dig vores nyhedsbrev!</p>
             </div>
             <form action="/action_page.php">
                 <div class="nyhedsbrev-info">
@@ -216,6 +230,9 @@
           </div>
         </div>
       </div>
+
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
     </section>
     </section>
     </section>
@@ -230,8 +247,8 @@
                     <div class="inspiration-footer">
                     <a class="links" href="index.html">FORSIDE</a>
                     <a class="links" href="jul.html">JUL</a>
-                    <a class="links" href="fødselsdag.html">FØDSELSDAG</a>
-                    <a class="links" href="værtinde.html">VÆRTINDE</a>
+                    <a class="links" href="foedselsdag.html">FØDSELSDAG</a>
+                    <a class="links" href="vaertinde.html">VÆRTINDE</a>
                     </div>
             </div>
             <div class="footer-to">
@@ -262,5 +279,24 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <!-- Fontawesome script-->
 <script src="https://kit.fontawesome.com/5a4a563485.js" crossorigin="anonymous"></script>
+<!-- script til tilbage til toppen pil -->
+<script>
+    let mybutton = document.getElementById("myBtn");
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
 </body>
 </html>
