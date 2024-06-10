@@ -1,0 +1,913 @@
+*{
+    padding: 0;
+    margin: 0;
+    @font-face {
+        /* font-family: 'MyAdobeFont'; */ 
+        font-family: "brandon-grotesque", "relation-one", sans-serif;
+        src: url("https://use.typekit.net/jnl1bzm.css");
+    }
+}
+
+
+/* Tekst og farver */ 
+body{
+    font-family: "brandon-grotesque", sans-serif;
+    /* font-family: 'MyAdobeFont'; */
+    font-weight: light;
+    color: #6B5E55;
+    background-color: #FFFEFB;
+    font-size: 1.3em;
+}
+
+.special-tekst{
+    font-family: "relation-one", sans-serif;
+}
+
+
+
+
+
+
+
+                    /* STYLING AF INDEX-SIDEN */
+/* Header - navigationsmenu og logo */ 
+.bg-body-tertiary{
+    background-color: #EBE5DA !important;
+    font-weight: bold;
+    font-size: 18px;
+    color: #6B5E55 !important;
+}
+
+.navn{
+    text-align: center;
+}
+
+.forside, .forside-nav{
+    text-decoration: none;
+    color: #6B5E55;
+}
+
+.dropdown-menu{
+    background-color: #EBE5DA;
+    color: #6B5E55;
+    font-size: 18px;
+    border: none;
+}
+
+.navbar-collapse{
+    background-color: #EBE5DA;
+}
+
+.dropdown-item:hover, .nav-link:hover{
+    background-color: #FFFEFB;
+    color: #6B5E55;
+}
+
+.nav-item{
+    padding: 0 10px !important;
+}
+
+.besog{
+    border-bottom: 2px solid #6B5E55;
+}
+
+.logo{
+    height: 80px;
+}
+
+.logo-desktop{
+    display: none;
+}
+
+.vidste-du{
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+/* Overskrift på materiale anbefalingerne */ 
+.overskrift{
+    height: 35px;
+    width: 350px;
+    background-color: #EBE5DA;
+}
+
+/* Billeder og tekst fra materialeforslagene på forsiden + billedet fra indledende tekst */ 
+.forslag{
+    padding-bottom: 100px;
+}
+
+.intro-billede{
+    width: 300px;
+    height: auto;
+}
+
+.intro-billede-centering{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.afstand{
+    margin-bottom: 150px;
+}
+
+/* Overskrifterne på alle sider */ 
+h1, h2{
+    text-align: center;
+}
+
+.title{
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+
+        /* Nyhedsbrev */ 
+.nyhedsbrev{
+    background-color: #EBE5DA;
+    padding: 20px 15px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    text-align: center;
+}
+  
+input[type=text], input[type=submit] {
+    padding: 12px;
+    margin: 8px 0;
+    width: 100%;
+    display: inline-block;
+    border: 1px solid #6B5E55;;
+    box-sizing: border-box;
+    color: #6B5E55;
+    background-color: #F8F7F1;
+}
+
+  
+input[type=submit] {
+    color: #6B5E55;
+    border: none;
+    text-align: center;
+}
+  
+input[type=submit]:hover {
+    opacity: 0.8;
+    background-color: #FFFEFB;
+}
+
+#nyhedsbrev-navn, #nyhedsbrev-email, #nyhedsbrev-knap{
+    width: 60%;
+}
+
+/* SEO tekst */ 
+.seo{
+    margin-bottom: 100px;
+}
+
+.seo-overskrift{
+    font-weight: bold;
+}
+
+/* footer */ 
+.footer-brede{
+    background-color: #EBE5DA;
+    color: #6B5E55;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 14px; 
+
+}
+
+.footer-overskrift{
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.links{
+    color: #6B5E55;
+    text-decoration: none;
+    padding-bottom: 15px;
+}
+
+.inspiration-footer{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #6B5E55;
+    padding: 10px 0; 
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0; 
+}
+
+.icons{
+    font-size: 30px;
+    color: #6B5E55;
+    padding: 10px 0; 
+
+}
+
+.footer-et, .footer-to, .footer-tre{
+    margin: 20px;
+}
+
+/* back to top pil */ 
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #EBE5DA;
+    color: #6B5E55;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+    color: #F8F7F1;
+  }
+
+
+
+
+
+
+
+
+                    /* STYLING AF BEGIVENHEDS-UNDERSIDERNE */ 
+/* Overskrift på pynt elementerne */ 
+.underside-overskrift{
+    height: 35px;
+    width: 300px;
+    background-color: #EBE5DA;
+}
+
+/* hacks/tips til børneinvolvering */ 
+.bornehacks{
+    background-color: #EBE5DA;
+    padding: 50px 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* videoerne */ 
+iframe{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin-top: 30px;
+}
+
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-top: 47.37%;
+}
+
+video{
+    width: 100%;
+    height: auto;
+}
+
+        /* Styling af inspirationsbillederne med lightbox */
+.light > .column {
+    padding: 8px 5px;
+    box-sizing: border-box;
+}
+
+.light{
+    display: flex;
+    justify-content: center;
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+.column {
+    float: left;
+    width: 24%;
+}
+  
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}
+  
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 90vh;
+    max-height: 90vh;
+    overflow: hidden;
+}
+
+.modal-image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+  
+/* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+.mySlides {
+    display: none;
+}
+  
+.cursor {
+    cursor: pointer;
+}
+  
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -25px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    text-decoration: none;
+}
+  
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+  
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+  
+img {
+    margin-bottom: -4px;
+}
+  
+.demo {
+    opacity: 0.6;
+}
+  
+.active,
+.demo:hover {
+    opacity: 1;
+}
+  
+img.hover-shadow {
+    transition: 0.3s;
+}
+  
+.hover-shadow:hover {
+    box-shadow: 4px 2px 4px 2px rgba(0, 0, 0, 0.2), 10px 3px 10px 3px rgba(0, 0, 0, 0.19);
+}
+
+.lukket, .open{
+    width: 100%;
+}
+
+/* inforgrafik placering */ 
+.infografik-placering{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infografik-billede{
+    width: 80%;
+    height: auto;
+}
+
+.infografik{
+    margin-bottom: 150px;
+    margin-top: 150px;
+}
+  
+
+/* tekst omkring materialevalg, som henviser til forsiden */ 
+.materiale-link{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+/* eksterne links og interne styling */ 
+.eksterne-links{
+    color: #6B5E55;
+}
+
+.interne-links{
+    background-color: #EBE5DA;
+    margin: 20px 20px;
+    padding: 15px 50px;
+    border: none;
+    width: 250px;
+}
+
+.interne-links a{
+    text-decoration: none;
+    color: #6B5E55;
+}
+
+
+.interne-links-centering{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+} 
+
+.interne-links:hover, .interne-links a:hover{
+    background-color: #555;
+    color: #F8F7F1;
+}
+
+.bliv-inspireret-her{
+    margin-top: 100px;
+}
+
+/* eksternt link til instagram for ekstra inspiration */ 
+.inspiration-link{
+    text-align: center;
+}
+
+/* billederne på undersiderne samt andre steder */ 
+.avis, .hjerter, .tegn{
+    width: 100%;
+    height: auto;
+}
+
+.rund-luft{
+    padding-bottom: 50px;
+}
+
+.tegn-centering, .avis-centering, .hjerte-centering, .rund-centering{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+                    /* STYLING AF OM OS SIDEN */ 
+.om-os-billede{
+    height: auto;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.om-os-billede-placering{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.om-os-navne{
+    font-weight: bold;
+}
+
+
+
+
+                    /* STYLING AF KONTAKTSIDEN */ 
+/* kontaktformular */ 
+.luft{
+    margin-top: 50px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: #F8F7F1;
+    color: #6B5E55;
+}
+
+#besked{
+    height: 200px;
+}
+  
+input[type=submit] {
+    background-color: #F8F7F1;
+    color: #6B5E55;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+input[type=submit]:hover {
+    background-color: #FFFEFB;
+}
+  
+.kontaktformular {
+    border-radius: 5px;
+    background-color: #EBE5DA;
+    padding: 20px;
+}
+
+.kontaktformular-placering{
+    display: flex;
+    justify-content: center; 
+    padding-top: 15px;
+}
+
+.kontakt-logo{
+    height: 250px;
+    margin-bottom: 100px;
+}
+
+.kontakt-logo-placering{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+                    /* MEDIA QUERRY FOR MOBIL VERSIONEN */
+@media screen and (max-width: 768px) {
+    /* Overskrift på materialeanbefaldningerne */ 
+    .overskrift{
+        text-align: center;
+    }
+
+    .index-overskrift{
+        font-size: x-large;
+    }
+
+    /* Overskrift på undersiderne pynt elementerne */ 
+    .overskrift-forslag{
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Footer */ 
+    .footer-brede{
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    /* header */ 
+    .navn{
+        display: none;
+    }
+
+    /* runde materiale billeder og tekst på forsiden */ 
+    .indpaknings-billede{
+        width: 300px;
+        height: auto;
+    }
+
+    .materiale{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .forslag-tekst{
+        margin-top: 20px;
+    }
+
+    /* Kontaktformular */ 
+    .kontaktformular{
+        width: 90%;
+    }
+
+    /* navne på pyntematerialer */ 
+    .underside-overskrift{
+        text-align: center;
+    }
+
+    /* de runde billeder på begivenhedsundersiderne */ 
+    .rund{
+        width: 300px;
+        height: auto;
+    }
+
+    /* tekst til pytematerialerne */ 
+    .pynt-tekst{
+        margin-top: 20px;
+    }
+
+    /* centering af tekst og billeder (tips) på undersider */ 
+    .underside-overskrift-centering{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tegn-centering, .avis-centering, .hjerte-centering{
+        padding: 20px 0;
+    }
+
+    /* størrelse af billederne ved tips/børnehacks*/ 
+    .tegn, .avis, .hjerter{
+        width: 60%;
+        height: auto;
+    }
+
+    /* luft ved inspiration */ 
+    .inspiration{
+    padding-top: 100px;
+    padding-bottom: 150px;
+    }
+
+    /* placering af det første billede på index siden */ 
+    .intro-billede-centering{
+        padding-bottom: 50px;
+    }
+
+    /* interne links */ 
+    .interne-links-centering{
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+                    /* MEDIA QUERRY FOR TABLET VERSIONEN */
+@media screen and (min-width: 768px){
+    /* Overskrift på materialeanbefaldningerne og pyntforslagene */ 
+    .overskrift, .underside-overskrift{
+        padding: 0 20px;
+    }
+
+    .navbar-collapse{
+        display: flex;
+        justify-content: end;
+    }
+
+    .navn{
+        display: none;
+    }
+
+    /* Footer */ 
+    .footer-vertikal{
+        display: flex;
+        flex-direction: row;
+        gap: 150px;
+    }
+
+    /* ændring af opsætning på materialeanbefaldningerne */ 
+    .omvendt{
+        display: flex; 
+        flex-direction: row-reverse;
+    }
+
+    .indpaknings-billede{
+        width: 270px;
+        height: auto;
+    }
+
+    /* Kontaktformular */ 
+    .kontaktformular{
+        width: 70%;
+    }
+
+    /* de runde billeder på begivenhedsundersiderne */ 
+    .rund{
+        width: 100%;
+        height: auto;
+    }
+
+    /* luft mellem de forskellige container */ 
+    .inspiration{
+        margin-top: 100px;
+        margin-bottom: 150px;
+    }
+
+    .pynt{
+        margin-bottom: 50px;
+    }
+
+    /* tekst stykke på om-os siden*/ 
+    .om-os-tekst{
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
+    /* første billede på forsiden */ 
+    .intro-billede{
+        width: 100%;
+        height: auto;
+    }
+
+    /* børnehacks/tips */ 
+    .tip{
+        text-align: left;
+    }
+
+    /* luft til nyhedsbrev tekst */ 
+    .nyhedsbrev-tekst{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+
+
+
+
+                    /* MEDIA QUERRY FOR DESKTOP VERSIONEN */ 
+@media screen and (min-width: 1100px){
+    body{
+        background-color: #F8F7F1;
+    }
+
+    /* opsætning af en centerelt kasse med diverse indhold */ 
+    .indholdskasse{
+        width: 70%;
+        background-color: #FFFEFB;
+        margin-top: 50px;
+    }
+
+    .indhold{
+        margin-left: 100px; 
+        margin-right: 100px;
+    }
+
+    .forside{
+        margin-top: 400px;
+    }
+
+    .indholdskasse-fader{
+        display: flex;
+        justify-content: center;
+    }  
+
+    /* Overskrift på materialeanbefaldningerne */ 
+    .overskrift{
+        width: 100%;
+        }
+
+    /* forside video */ 
+    .intro-video{
+        position: absolute; 
+        z-index: -1;
+    }
+
+    /* tips/ børnehacks */ 
+    .bornehacks{
+        padding-left: 100px; 
+        padding-right: 100px;
+    }
+}
+
+
+
+
+
+                    /* MEDIA QUERRY FOR ÆNDRINGER TIL HEADEREN */ 
+@media screen and (min-width: 1200px){
+    /* header */ 
+    .logo-desktop{
+        display: block;
+        height: 100px;
+
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .navn{
+        display: block;
+        padding-left: 320px;
+    }
+
+    .bg-body-tertiary{
+        padding-left: 60px !important;
+    } 
+}
+
+
+
+
+                    /* MEDIA QUERRY FOR DESKTOP VERSIONEN */ 
+@media screen and (min-width: 1380px) {
+    /* header  */
+    .navn{
+        padding-left: 470px;
+    }
+}
+
+
+
+
+                   /* MEDIA QUERRY FOR DESKTOP VERSIONEN */ 
+@media screen and (min-width: 1600px){
+    .navn{
+    padding-left: 550px;           
+    }
+}
+
+
+
+                    /* MEDIA QUERRY FOR DESKTOP VERSIONEN */ 
+@media screen and (min-width: 1800px){
+    .navn{
+        padding-left: 650px;
+
+    }
+}
+
+
+
+                    /* MEDIA QUERRY FOR DESKTOP VERSIONEN */ 
+@media screen and (min-width: 2000px){
+    .navn{
+    padding-left: 750px;
+                    
+    }
+}
+
+
+
+                    /* MEDIA QUERRY FOR DESKTOP VERSIONEN - STOPKLODS */ 
+@media screen and (min-width: 2100px) {
+    .indholdskasse-fader{
+        max-width: 2100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
